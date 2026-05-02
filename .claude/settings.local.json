@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/SD/Project/Python_Work/**)",
+      "Bash(mv temp_clone/* HermesAgent/)",
+      "Bash(mv temp_clone/.* HermesAgent/)",
+      "Bash(rm -rf temp_clone)",
+      "Bash(python -m pip --version)",
+      "Bash(pip install:*)",
+      "Bash(python -m pip install -e \".[cli,messaging,cron,voice,honcho,web,mcp]\")",
+      "Bash(hermes --version)",
+      "Bash(python -m hermes_cli.main --version)",
+      "Bash(python -c \"from hermes_cli.main import main; print\\('Hermes CLI module found'\\)\")",
+      "Bash(python -m hermes_cli.main setup)",
+      "Bash(PYTHONIOENCODING=utf-8 python -m hermes_cli.main setup)",
+      "Bash(curl -s http://localhost:11434/api/tags)",
+      "Bash(python -m json.tool)",
+      "Bash(ollama list:*)",
+      "Bash(curl -s -X POST http://localhost:11434/v1/chat/completions -H 'Content-Type: application/json' -d '{:*)",
+      "Bash(PYTHONIOENCODING=utf-8 python -m hermes_cli.main config show)",
+      "Bash(timeout 15 python -m hermes_cli.main)",
+      "Bash(export PYTHONIOENCODING=utf-8)",
+      "Bash(export PYTHONLEGACYWINDOWSSTDIO=utf-8)",
+      "Bash(timeout 20 python -m hermes_cli.main)",
+      "Bash(timeout 10 python -m hermes_cli.main --web)",
+      "Bash(where python:*)",
+      "Bash(python -m hermes_cli.main config show)",
+      "Bash(PYTHONIOENCODING=utf-8 python -m hermes_cli.main config set model.default \"custom:deepseek-r1:14b\")",
+      "Bash(grep -rn \"custom_providers\" hermes_cli/*.py)",
+      "Bash(python -c \"import hermes_cli; import os; print\\(os.path.dirname\\(hermes_cli.__file__\\)\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -m hermes_cli.main doctor)",
+      "Bash(python -c ':*)",
+      "Bash(cat)",
+      "Bash(ollama create:*)",
+      "Bash(ollama show:*)",
+      "Bash(xargs grep:*)",
+      "Bash(pip list:*)",
+      "Bash(python -m pip list)"
+    ]
+  }
+}
