@@ -70,3 +70,8 @@ mini-swe-agent/
 result
 website/static/api/skills-index.json
 models-dev-upstream/
+
+# Claude Code 临时工作树（8796 个会话生成文件，非项目内容）
+.claude/worktrees/
+# 个人启动脚本（含本机路径，不入库）
+启动Hermes微信.bat
